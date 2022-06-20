@@ -77,3 +77,4 @@ function game() {
 }
 
 game();
+console.log("Hey");
