@@ -55,26 +55,6 @@ function playRound(_playerselection, _computerselection) {
 }
 
 
-function game() {
-    playerScore = 0;
-    pcScore = 0;
-
-    for (let i = 0; i < 5; i++) {
-        const playerChoice = prompt("Rock, Paper or Scissors. Make your choice: ");
-        let capitalChoice = playerChoice.toUpperCase();
-
-        let result = playRound(capitalChoice, computerPlay());
-        if (result == 1) {
-            playerScore++;
-        }
-        else if (result == 0) {
-            pcScore++;
-        }
-
-        console.log("Player Score: " + playerScore + " PC Score: " + pcScore)
-
-    }
-}
 
 game();
 console.log("Hey");
